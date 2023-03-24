@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "./Home.module.scss";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -16,17 +15,64 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>
+          <p className="is-primary">
             Get started by editing&nbsp;
+            <button className="button custom-button">Click me!</button>
             <code className={styles.code}>pages/index.js</code>
           </p>
+          <div class="box">I'm in a box.</div>
+
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img
+                    src="https://bulma.io/images/placeholders/128x128.png"
+                    alt="Image"
+                  />
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small>{" "}
+                    <small>31m</small>
+                    <br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                    condimentum luctus turpis.
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a class="level-item" aria-label="reply">
+                      <span class="icon is-small">
+                        <i class="fas fa-reply" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="retweet">
+                      <span class="icon is-small">
+                        <i class="fas fa-retweet" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="like">
+                      <span class="icon is-small">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -66,10 +112,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className="is-success">
               Docs <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className="custom-button">
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
@@ -119,5 +165,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
