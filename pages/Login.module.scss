@@ -1,0 +1,112 @@
+.LoginContainer {
+  background: linear-gradient(130deg, #ff1493, #ff8c00);
+  width: 100%;
+  height: 100vh;
+}
+
+.LoginImg {
+  padding-top: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.EmailInput,
+.PasswordInput {
+  display: block;
+  width: 70%;
+  padding: 15px;
+  margin: 70px auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="password"] {
+  margin-top: 20px;
+}
+
+.LoginBtn {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: rgb(255, 0, 128);
+}
+
+.LoginText {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+
+.ForgotPassWord {
+  display: block;
+  width: 70%;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  color: white;
+  text-decoration: underline;
+}
+.CreateAccount {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: purple;
+}
+
+.LoginBtn,
+.CreateAccount {
+  border: none;
+}
+.EyeMarkBox {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.EyeMark {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 302px;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.CreateAccountBtn {
+  background-color: #28a745;
+}
+
+.create-CreateAccountBtn:hover {
+  background-color: #218838;
+}
+
+.BottomPic {
+  margin: 0 auto;
+  display: block;
+}
