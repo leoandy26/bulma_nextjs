@@ -20,7 +20,6 @@
   justify-content: center;
   align-items: center;
   color: white;
-
   font-size: 24px;
 }
 
@@ -41,13 +40,48 @@
   align-items: center;
   justify-content: center;
 }
+.box:not(:last-child) {
+  margin-bottom: 20px;
+}
 .PickUpBtn {
   font-size: 10px;
 }
 .PIckUPText {
   font-size: 12px;
-  padding-left: 32px;
+  padding-left: 24px;
   font-weight: bold;
   font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+
+.UnreadCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: 53px;
+  border-radius: 4px;
+  background-color: orange;
+  margin: 0 auto;
+}
+
+.Time {
+  font-size: 8px;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+
+.UnreadTitle {
+  font-size: 12px;
+  width: 65px;
+  font-weight: bold;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+.UnreadText {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+
+.UnreadRight {
+  padding-left: 24px;
 }
 // ------------ Pick Up と未読カード ここから -----------

@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <hero class="Hero">
+        <hero className={Styles.Hero}>
           <header className={Styles.Header}>
             <p className={Styles.HeaderText}>3rDOOR</p>
             <div class="field is-grouped ">
@@ -29,10 +29,19 @@ export default function Home() {
             </div>
           </header>
         </hero>
-        <div class="PickUp">
+        <div>
           <div class="box FlexPickUP">
             <button class="button is-danger PickUpBtn">PICKUP</button>
             <p class="PIckUPText">神泉駅５分 アフタヌーンティーのPRをお願･･･</p>
+          </div>
+          <div class="box UnreadCard">
+            <p className="UnreadTitle">未読あり |</p>
+            <div className="UnreadRight">
+              <p class="Time">５時間前</p>
+              <p class="UnreadText">
+                最高級の豆を使った完全オリジナルコーヒーの･･･
+              </p>
+            </div>
           </div>
         </div>
       </main>
