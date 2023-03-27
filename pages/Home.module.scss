@@ -55,13 +55,14 @@
 
 .UnreadCard {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 97%;
-  height: 53px;
+  width: 87%;
+  height: 43px;
   border-radius: 4px;
   background-color: orange;
   margin: 0 auto;
+  color: white;
 }
 
 .Time {
@@ -76,7 +77,7 @@
   font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
 }
 .UnreadText {
-  font-size: 11px;
+  font-size: 8px;
   font-weight: bold;
   font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
 }
@@ -84,4 +85,41 @@
 .UnreadRight {
   padding-left: 24px;
 }
-// ------------ Pick Up と未読カード ここから -----------
+// ------------ Pick Up と未読カード ここまで -----------
+// ------------ キャンペーンセクション ここから -----------
+
+.CampainContainer {
+  padding: 10px 20px;
+}
+.CampainPicBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.CampainCard {
+  margin: 0 auto;
+}
+.CampainText {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}
+// ------------ キャンペーンセクション ここまで -----------
+.CampainPicture {
+  display: block;
+  width: 165px;
+  height: 100px;
+  object-fit: cover;
+  margin: 4px 2px;
+  background-image: url(/_next/static/media/lunchpic.72bc9757.jpg);
+}
+
+.CategoryCenterTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+}

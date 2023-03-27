@@ -4,6 +4,29 @@ import Styles from "./Home.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const campain_list = [
+  {
+    id: 1,
+    title: "ゲーム",
+    url: String,
+  },
+  {
+    id: 2,
+    title: "グルメ",
+    url: String,
+  },
+  {
+    id: 3,
+    title: "トラベル",
+    url: String,
+  },
+  {
+    id: 4,
+    title: "レジャー",
+    url: String,
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -42,6 +65,29 @@ export default function Home() {
                 最高級の豆を使った完全オリジナルコーヒーの･･･
               </p>
             </div>
+          </div>
+          <div className="CampainContainer">
+            <div className="CampainText">カテゴリーでキャンペーンを探す</div>
+            <div className="CampainPicBox">
+              {campain_list.map((item) => (
+                <div key={item.id} className="CampainCard">
+                  <hero className={Styles.CampainPicture}>
+                    <div className="CategoryCenterTitle">{item.title}</div>
+                  </hero>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="Footer">
+          <div className="FooterNav">
+            <ul className="NavList">
+              <li className="NavItem"></li>
+              <li className="NavItem"></li>
+              <li className="NavItem"></li>
+              <li className="NavItem"></li>
+              <li className="NavItem"></li>
+            </ul>
           </div>
         </div>
       </main>
