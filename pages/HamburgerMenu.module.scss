@@ -1,0 +1,32 @@
+.SideToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+}
+
+.ProfileBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ProfileImg {
+  width: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.MenuList {
+}
+
+.ListFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
