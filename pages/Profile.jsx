@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function HamburgerMenu() {
+export default function Profile() {
   const [isActive, setIsActive] = useState(false);
 
   const toggleMenu = () => {
